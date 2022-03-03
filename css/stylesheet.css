@@ -1,0 +1,89 @@
+html {
+  box-sizing: border-box;
+}
+body{
+  margin:0;
+}
+h1, body p, h2, button[type*="submit"] {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin:auto;
+  margin-top:15px;
+  margin-bottom:15px;
+  text-align: center;
+}
+h1 {
+  background-color: #ffc0cb;
+  margin-top:0;
+  padding:10px 0px;
+}
+body p, label,legend:not(fieldset legend:first-child),placeholder, .dis {
+  color: #778899;
+}
+
+fieldset{
+  margin:10px;
+  display:inline-flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  border: none;
+  border-top:#ffc0cb solid 10px;
+  border-top-style: double;
+  width:90%
+}
+input {
+  display:inline-block;
+  padding-bottom:10px;
+  padding-top: 0px;
+}
+legend {
+  float:left;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+fieldset:first-of-type input, fieldset:first-of-type select {
+  background-color:	rgba(128,128,128,.3);
+  border:none;
+  border-radius:15px;
+  height:50px;
+
+}
+input[type='text']::placeholder, input[type='email']::placeholder {
+  text-align:right;
+  padding-right:10px;
+}
+.box {
+  padding:12px;
+}
+fieldset:last-of-type input {
+  margin:5px;
+}
+#other {
+  border:none;
+  background-color:	rgba(128,128,128,.3);
+  height:80px;
+  border-radius:15px;
+}
+button {
+  width:85%;
+  padding:30px 0px;
+  font-size: 30px;
+  color:white;
+  border:none;
+  background-color:#00ace6;
+  border-radius:15px;
+}
+body p:not(article p) {
+  font-style: italic;
+}
+/**Media Queries-----------------------------------**/
+@media screen and (min-width:768px) {
+  form {
+    display:flex;
+    flex-wrap: wrap;
+    width:60%;
+    margin:auto;
+  }
+}
