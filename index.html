@@ -2,6 +2,9 @@
 <html lang="en">
 <head>
   <title>The Code Review </title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,700&display=swap" rel="stylesheet">
   <meta name="viewport" content="width=device-width, initial-scale=1" >
   <link rel="stylesheet" type="text/css" href="css/stylesheet.css"/>
 </head>
@@ -24,19 +27,19 @@
       <div class="container">
         <br>
         <label for="name">Full Name</label>
-        <input type="text" id="name" name="user_name" placeholder="Required">
+        <input type="text" id="name" name="user_name" placeholder="Required" required="" >
         <br>
         <label for="mail">Email Address</label>
-        <input type="email" id="mail" name="user_email" placeholder="Required">
+        <input type="email" id="mail" name="user_email" placeholder="Required" required="">
         <br>
         <label for="phone">Phone Number</label>
-        <input type="tel" id="phone" name="user_phone">
+        <input type="tel" id="phone" name="user_phone" placeholder="Required" required="">
         <br>
         <label for="address">Street Address</label>
-        <input id="address" name="user_address">
+        <input id="address" type="text" name="user_address" placeholder="Address">
         <br>
         <label for="city">City</label>
-        <input id="city" name="user_city">
+        <input id="city" type="text" name="user_city" placeholder="City">
         <br>
         <label for="state">State</label>
         <select id="state" name="user_state">
@@ -95,7 +98,7 @@
         </select>
         <br>
         <label for="zipcode">Zip Code</label>
-        <input id="zipcode" name="zip" type="number">
+        <input id="zipcode" name="zip" type="number" placeholder="Zipcode">
       </div>
     </fieldset>
     <fieldset>
@@ -117,11 +120,11 @@
       <label class="light" for="Plain_Text">Plain Text</label></div>
 
       <label class="other box" for="other">Other topics you'd like to hear about</label><br>
-      <textarea id="other" name="user_other"></textarea>
+      <textarea id="other" name="user_other" placeholder="What else would you like to hear about?"></textarea>
 
   </fieldset>
-  </form>
+
   <button type="submit"> Sign Up</button>
   <p>Copyright The Code Review</p>
-
+  </form>
 </body>

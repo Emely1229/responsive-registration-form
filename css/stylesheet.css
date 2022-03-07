@@ -17,6 +17,7 @@ h1 {
   background-color: #ffc0cb;
   margin-top:0;
   padding:10px 0px;
+  font-family: 'Merriweather', serif;
 }
 body p, label,legend:not(fieldset legend:first-child),placeholder, .dis {
   color: #778899;
@@ -41,6 +42,7 @@ legend {
   float:left;
   font-weight: bold;
   font-size: 20px;
+  font-family: 'Merriweather', serif;
 }
 
 fieldset:first-of-type input, fieldset:first-of-type select {
@@ -51,11 +53,11 @@ fieldset:first-of-type input, fieldset:first-of-type select {
   width:calc(100%);
 }
 .container input:last-of-type {
-  width:60%;
+  width:50%;
   margin-top:15px;
   display: block;
 }
-input[type='text']::placeholder, input[type='email']::placeholder {
+input[type='text']::placeholder, input[type='email']::placeholder, input[type='tel']::placeholder {
   text-align:right;
   padding-right:10px;
 }
@@ -87,6 +89,12 @@ body p:not(article p) {
 textarea {
   width:20rem;
 }
+fieldset:First-of-type input:focus , #other:focus ,button:focus ,#state:focus, checkbox, fieldset:last-of-type input {
+  background:pink;
+  transition: all 1s ease-in-out;
+}
+
+
 /**Media Queries-----------------------------------**/
 @media screen and (min-width:768px) {
   form {
@@ -135,5 +143,8 @@ textarea {
   }
   textarea {
     width:37rem;
+  }
+  .container input:last-of-type {
+    width:25%;
   }
 }
