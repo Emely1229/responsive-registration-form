@@ -23,11 +23,14 @@ body p, label,legend:not(fieldset legend:first-child),placeholder, .dis {
   color: #778899;
 }
 
-fieldset{
+legend {
   border: none;
   border-top:#ffc0cb solid 10px;
   border-top-style: double;
   width:100%;
+}
+fieldset {
+  border:none;
 }
 form {
   display: block;
@@ -39,7 +42,6 @@ input {
   padding-top: 0px;
 }
 legend {
-  float:left;
   font-weight: bold;
   font-size: 20px;
   font-family: 'Merriweather', serif;
@@ -121,8 +123,7 @@ fieldset:First-of-type input:focus , #other:focus ,button:focus ,#state:focus, c
   }
   .container label {
     margin:0px;
-    display: inline-block;;
-    float:left;
+    display: inline-block;
     margin:30px 0px;
     padding-top:10px;
     width:8rem;
